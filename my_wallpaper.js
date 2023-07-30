@@ -38,7 +38,7 @@ fill(200)
 ellipse(85, 100, 10, 10);//left eye shadow
 ellipse(105, 100, 10, 10);//right eye shadow
 
-
+strokeWeight(1);
 line(95, 125, 95, 145);//teeth first line left 
 line(90, 125, 90, 145);//teeth middle line  
 line(100, 125, 100, 145);//teeth last line right 
