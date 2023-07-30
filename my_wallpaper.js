@@ -19,13 +19,16 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+  fill(0);
+  ellipse(100, 100, 61, 46); //head border oval
+  rect(80, 110, 31, 41);// head border rectangle 
   noStroke();
   fill(255);
   ellipse(100, 100, 60, 45); //head oval 
 //ellipse(x, y, w, [h])
 
 
-rect(80, 110, 30, 40);//head rectangle 
+rect(80, 110, 30, 40);// head rectangle 
 stroke(12, 13, 12); //mouth  
 strokeWeight(2);
 rect(85, 125, 20, 20);
