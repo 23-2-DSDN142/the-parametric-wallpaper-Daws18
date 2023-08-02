@@ -62,6 +62,12 @@ fill(252, 186, 3) //yellow cntre
 ellipse(67, 87, 8, 8); //flower centre 
 
 fill(235, 122, 233) //pink 
-ellipse(75, 110, 8, 8) //cheek highlight 
+ellipse(78, 110, 8, 8) //left cheek highlight 
+ellipse(113, 110, 8, 8) //right cheek highlight 
+
+
+fill(0) //black
+ellipse(95, 87, 8, 8) //dot design 
+
 
 }
