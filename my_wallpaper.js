@@ -6,6 +6,7 @@ let rect_height = 20;
 //DEVELOP_GLYPH
 //GRID_WALLPAPER
 
+//NINE_PORTRAIT
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
@@ -54,12 +55,11 @@ fill(0)
 ellipse(90, 115, 2, 5);// nostril
 ellipse(95, 115, 2, 5);// nostril
 
+//flower 1
+draw_flower(67,87)
 
-fill(252, 69, 3)//red petal 
-ellipse(67, 87, 8, 19); //flower petal vertical  
-ellipse(67, 87, 19, 8); //flower petal horizontal 
-fill(252, 186, 3) //yellow cntre  
-ellipse(67, 87, 8, 8); //flower centre 
+draw_flower(67,87)
+
 
 fill(235, 122, 233) //pink 
 ellipse(78, 110, 8, 8) //left cheek highlight 
@@ -70,4 +70,13 @@ fill(0) //black
 ellipse(95, 87, 8, 8) //dot design 
 
 
+}
+
+function draw_flower(x,y){
+  fill(252, 69, 3)//red petal 
+  ellipse(x, y, 8, 19); //flower petal vertical  
+  ellipse(x, y, 19, 8); //flower petal horizontal 
+  fill(252, 186, 3) //yellow cntre  
+  ellipse(x, y, 8, 8); //flower centre 
+  
 }
