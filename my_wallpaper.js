@@ -58,7 +58,7 @@ ellipse(95, 115, 2, 5);// nostril
 //flower 1
 draw_flower(67,87)
 
-draw_flower(67,87)
+draw_flower(117,87)
 
 
 fill(235, 122, 233) //pink 
