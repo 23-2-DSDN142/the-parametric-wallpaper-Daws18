@@ -3,11 +3,14 @@ let rect_width  = 20;
 let rect_height = 20;
 
 
-function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+//DEVELOP_GLYPH
+//GRID_WALLPAPER
 
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+    //true to show outline 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
@@ -50,4 +53,15 @@ line(85, 135, 105, 135);//teeth horrizontal line
 fill(0)
 ellipse(90, 115, 2, 5);// nostril
 ellipse(95, 115, 2, 5);// nostril
+
+
+fill(252, 69, 3)//red petal 
+ellipse(67, 87, 8, 19); //flower petal vertical  
+ellipse(67, 87, 19, 8); //flower petal horizontal 
+fill(252, 186, 3) //yellow cntre  
+ellipse(67, 87, 8, 8); //flower centre 
+
+fill(235, 122, 233) //pink 
+ellipse(75, 110, 8, 8) //cheek highlight 
+
 }
