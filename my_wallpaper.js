@@ -8,7 +8,7 @@ let rect_height = 20;
 
 //NINE_PORTRAIT
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
     //true to show outline 
@@ -55,10 +55,8 @@ fill(0)
 ellipse(90, 115, 2, 5);// nostril
 ellipse(95, 115, 2, 5);// nostril
 
-//flower 1
-draw_flower(67,87)
 
-draw_flower(117,87)
+
 
 
 fill(235, 122, 233) //pink 
@@ -69,6 +67,12 @@ ellipse(113, 110, 8, 8) //right cheek highlight
 fill(0) //black
 ellipse(95, 87, 8, 8) //dot design 
 
+//top hat
+line(70,70,150,70)
+
+draw_flower(67,87)//red flower 
+
+draw_flower(117,87)
 
 }
 
