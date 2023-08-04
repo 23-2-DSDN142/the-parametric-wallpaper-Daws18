@@ -1,14 +1,14 @@
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 20;
-
-
+let Back_ground = [165, 230, 250];
+let pupil_colour = [250]
 //DEVELOP_GLYPH
 //GRID_WALLPAPER
 
 //NINE_PORTRAIT
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
     //true to show outline 
@@ -19,10 +19,13 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(165, 230, 250); //light baby blue colour 
+  background(Back_ground); //light baby blue colour [165, 230, 250]
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
+  //line(100,0,100,200)//Gide line vertical
+  //line(0,100,200,100)//Gide line horrizontal
+ 
   fill(0);
   ellipse(100, 100, 61, 46); //head border oval
   rect(80, 110, 31, 41);// head border rectangle 
@@ -35,13 +38,13 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 rect(80, 110, 30, 40);// head rectangle 
 stroke(12, 13, 12); //mouth  
 strokeWeight(2);
-rect(85, 125, 20, 20);
+rect(85, 125, 20, 20); //mouth lips border 
 
 fill(0);
 ellipse(85, 100, 10, 15);//left eye 
 ellipse(105, 100, 10, 15);//right eye 
 
-fill(200)
+fill(pupil_colour)
 ellipse(85, 100, 10, 10);//left eye shadow
 ellipse(105, 100, 10, 10);//right eye shadow
 
@@ -56,22 +59,37 @@ ellipse(90, 115, 2, 5);// nostril
 ellipse(95, 115, 2, 5);// nostril
 
 
-
-
-
-fill(235, 122, 233) //pink 
-ellipse(78, 110, 8, 8) //left cheek highlight 
-ellipse(113, 110, 8, 8) //right cheek highlight 
+fill(235, 122, 233); //pink 
+ellipse(78, 110, 8, 8); //left cheek highlight 
+ellipse(113, 110, 8, 8); //right cheek highlight 
 
 
 fill(0) //black
-ellipse(95, 87, 8, 8) //dot design 
+ellipse(95, 87, 8, 8); //middle dot design 
+ellipse(105, 87, 4, 4); //right dot design
+ellipse(85, 87, 4, 4); //left dot design 
+ellipse(78, 87, 4, 4); //1st left dot design 
 
 //top hat
-line(70,70,150,70)
+noStroke();
+beginShape(); //brim 
+vertex(70, 80);
+vertex(70, 70);
+vertex(125, 75);
+vertex(125, 85);
+endShape(CLOSE);
 
-draw_flower(67,87)//red flower 
+//top hat 
+fill(0)
+beginShape(); //top
+vertex(80, 80);
+vertex(80, 50);
+vertex(117, 55);
+vertex(117, 80);
+endShape(CLOSE);
 
+//red flower
+draw_flower(67,87)
 draw_flower(117,87)
 
 }
