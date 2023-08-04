@@ -1,14 +1,17 @@
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 20;
-let Back_ground = [165, 230, 250];
-let pupil_colour = [250]
+let Back_ground = [165, 230, 250]; 
+let pupil_colour = [255]; 
+
+//[165, 230, 250]; blue 
+//pastel red [240, 70, 70]
 //DEVELOP_GLYPH
 //GRID_WALLPAPER
 
 //NINE_PORTRAIT
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
     //true to show outline 
@@ -72,6 +75,7 @@ ellipse(78, 87, 4, 4); //1st left dot design
 
 //top hat
 noStroke();
+fill(0)
 beginShape(); //brim 
 vertex(70, 80);
 vertex(70, 70);
@@ -80,7 +84,6 @@ vertex(125, 85);
 endShape(CLOSE);
 
 //top hat 
-fill(0)
 beginShape(); //top
 vertex(80, 80);
 vertex(80, 50);
