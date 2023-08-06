@@ -1,17 +1,20 @@
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 20;
-let Back_ground = [165, 230, 250]; 
+let Back_ground = [0]//[165, 230, 250]; 
 let pupil_colour = [255]; 
-
+let petal_colour =  [235, 84, 212]// [21, 125, 49]   //[252, 69, 3]; 
+let top_hat_colour = [255]//[219, 197, 151]
+let dot_colour = [17, 22, 186]
 //[165, 230, 250]; blue 
+//[237, 134, 31] orange 
 //pastel red [240, 70, 70]
 //DEVELOP_GLYPH
 //GRID_WALLPAPER
 
 //NINE_PORTRAIT
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
     //true to show outline 
@@ -67,15 +70,15 @@ ellipse(78, 110, 8, 8); //left cheek highlight
 ellipse(113, 110, 8, 8); //right cheek highlight 
 
 
-fill(0) //black
+fill(dot_colour) //black
 ellipse(95, 87, 8, 8); //middle dot design 
 ellipse(105, 87, 4, 4); //right dot design
 ellipse(85, 87, 4, 4); //left dot design 
 ellipse(78, 87, 4, 4); //1st left dot design 
 
-//top hat
-noStroke();
-fill(0)
+
+noStroke();//top hat
+fill(top_hat_colour)
 beginShape(); //brim 
 vertex(70, 80);
 vertex(70, 70);
@@ -96,9 +99,16 @@ draw_flower(67,87)
 draw_flower(117,87)
 
 }
+if (Back_ground[0] === 0) {
+  top_hat_colour = [255]; // Change top_hat_colour to white (255)
+} else {
+  top_hat_colour = [0];   // Revert to original color (black) if Back_ground is not 0
+
+
+}
 
 function draw_flower(x,y){
-  fill(252, 69, 3)//red petal 
+  fill(petal_colour)//red petal 
   ellipse(x, y, 8, 19); //flower petal vertical  
   ellipse(x, y, 19, 8); //flower petal horizontal 
   fill(252, 186, 3) //yellow cntre  
