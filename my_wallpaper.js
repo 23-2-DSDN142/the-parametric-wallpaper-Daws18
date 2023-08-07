@@ -1,11 +1,10 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
 let Back_ground = [0]//[165, 230, 250]; 
 let pupil_colour = [255]; 
 let petal_colour =  [235, 84, 212]// [21, 125, 49]   //[252, 69, 3]; 
 let top_hat_colour = [255]//[219, 197, 151]
 let dot_colour = [17, 22, 186]
+let cheek_highlight = [235, 122, 233]
 //[165, 230, 250]; blue 
 //[237, 134, 31] orange 
 //pastel red [240, 70, 70]
@@ -65,7 +64,7 @@ ellipse(90, 115, 2, 5);// nostril
 ellipse(95, 115, 2, 5);// nostril
 
 
-fill(235, 122, 233); //pink 
+fill(cheek_highlight); //pink 235, 122, 233
 ellipse(78, 110, 8, 8); //left cheek highlight 
 ellipse(113, 110, 8, 8); //right cheek highlight 
 
@@ -95,16 +94,14 @@ vertex(117, 80);
 endShape(CLOSE);
 
 //red flower
-draw_flower(67,87)
-draw_flower(117,87)
+draw_flower(67,87)//flower on left postion on skull
+draw_flower(117,87)//flower on right postion on skull
 
 }
 if (Back_ground[0] === 0) {
   top_hat_colour = [255]; // Change top_hat_colour to white (255)
 } else {
   top_hat_colour = [0];   // Revert to original color (black) if Back_ground is not 0
-
-
 }
 
 function draw_flower(x,y){
