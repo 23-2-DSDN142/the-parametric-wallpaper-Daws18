@@ -1,11 +1,12 @@
 //your parameter variables go here!
-let Back_ground = [237, 134, 31] //[0]//[165, 230, 250]; 
+let Back_ground = [0] //[0]//[165, 230, 250]; 
 let pupil_colour = [255]; 
 let petal_colour =  [235, 84, 212]// [21, 125, 49]   //[252, 69, 3]; 
 let top_hat_colour = [255]//[219, 197, 151]
 let dot_colour = [0]
 let cheek_highlight = [235, 122, 233]
-let skull_face_colour = [225]
+let skull_face_colour = [245]
+let removeHat = true //if false hat disappears
 //[165, 230, 250]; blue 
 //[237, 134, 31] orange 
 //pastel red [240, 70, 70]
@@ -74,7 +75,7 @@ ellipse(105, 87, 4, 4); //right dot design
 ellipse(85, 87, 4, 4); //left dot design 
 ellipse(78, 87, 4, 4); //1st left dot design 
 
-
+if(removeHat){
 noStroke();//top hat
 fill(top_hat_colour)
 beginShape(); //brim 
@@ -91,18 +92,15 @@ vertex(80, 50);
 vertex(117, 55);
 vertex(117, 80);
 endShape(CLOSE);
-
-
+}
 draw_flower(67,87)//flower on left postion on skull
 draw_flower(117,87)//flower on right postion on skull
-
 }
 if (Back_ground[0] === 0) {
   top_hat_colour = [255]; // Change top_hat_colour to white (255)
 } else {
   top_hat_colour = [0];   // Revert to original color (black) if Back_ground is not 0
 }
-
 function draw_flower(x,y){
   
   fill(petal_colour)//red petal
@@ -112,5 +110,4 @@ function draw_flower(x,y){
   ellipse(x, y, 19, 8); //flower petal horizontal 
   fill(252, 186, 3) //yellow cntre  
   ellipse(x, y, 8, 8); //flower centre 
-  
 }
