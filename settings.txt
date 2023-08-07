@@ -9,13 +9,41 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let Back_ground = [150, 5, 240]; 
+let pupil_colour = [255]; 
+let petal_colour = [235, 84, 212]; 
+let top_hat_colour = [0];
+let dot_colour = [0];
+let cheek_highlight = [235, 122, 233];
+let skull_face_colour = [245];
+let removeHat = true //if false hat disappears
+let removeFlower = true //if false flowers disappear
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 2:
+
+//your parameter variables go here!
+let Back_ground = [250, 42, 15]; 
+let pupil_colour = [255]; 
+let petal_colour =  [235, 84, 212]; 
+let top_hat_colour = [0];
+let dot_colour = [0];
+let cheek_highlight =[235, 122, 233];
+let skull_face_colour = [245];
+let removeHat = true //if false hat disappears
+let removeFlower = false //if false flowers disappear
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -25,21 +53,179 @@ function setup_wallpaper(pWallpaper) {
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 100;
   pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 /////////////////////////////////
 
-Wallpaper 2:
+Wallpaper 3:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let Back_ground = [255]; 
+let pupil_colour = [255]; 
+let petal_colour =  [235, 84, 212]; 
+let top_hat_colour = [0];
+let dot_colour = [0];
+let cheek_highlight =[235, 122, 233];
+let skull_face_colour = [245];
+let removeHat = false //if false hat disappears
+let removeFlower = false //if false flowers disappear
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+//your parameter variables go here!
+let Back_ground = [0]; 
+let pupil_colour = [255]; 
+let petal_colour =  [235, 84, 212];
+let top_hat_colour = [0];
+let dot_colour = [0];
+let cheek_highlight =[235, 122, 233];
+let skull_face_colour = [245];
+let removeHat = true //if false hat disappears
+let removeFlower = true //if false flowers disappear
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+//your parameter variables go here!
+let Back_ground = [165, 230, 250]; 
+let pupil_colour = [255]; 
+let petal_colour =  [235, 84, 212];
+let top_hat_colour = [0];
+let dot_colour = [0];
+let cheek_highlight =[235, 122, 233];
+let skull_face_colour = [245];
+let removeHat = true //if false hat disappears
+let removeFlower = true //if false flowers disappear
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+//your parameter variables go here!
+let Back_ground = [237, 134, 31]; 
+let pupil_colour = [0]; 
+let petal_colour =  [235, 84, 212]; 
+let top_hat_colour = [0];
+let dot_colour = [0];
+let cheek_highlight =[255];
+let skull_face_colour = [237, 134, 31];
+let removeHat = true //if false hat disappears
+let removeFlower = false //if false flowers disappear
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+//your parameter variables go here!
+let Back_ground = [0]; 
+let pupil_colour = [255]; 
+let petal_colour =  [235, 84, 212]// [21, 125, 49]; 
+let top_hat_colour = [0];
+let dot_colour = [0];
+let cheek_highlight = [255];
+let skull_face_colour = [150, 5, 240];
+let removeHat = true //if false hat disappears
+let removeFlower = false //if false flowers disappear
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+//your parameter variables go here!
+let Back_ground = [266]; 
+let pupil_colour = [255]; 
+let petal_colour = [235, 84, 212];
+let top_hat_colour = [0];
+let dot_colour = [255];
+let cheek_highlight =[255];
+let skull_face_colour = [150, 5, 240];
+let removeHat = true //if false hat disappears
+let removeFlower = true //if false flowers disappear
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+//your parameter variables go here!
+let Back_ground = [266]; 
+let pupil_colour = [255]; 
+let petal_colour =  [150, 5, 240]; 
+let top_hat_colour = [0];
+let dot_colour = [0];
+let cheek_highlight =[255];
+let skull_face_colour = [250, 42, 15];
+let removeHat = true //if false hat disappears
+let removeFlower = false //if false flowers disappear
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);

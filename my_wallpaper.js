@@ -1,22 +1,24 @@
 //your parameter variables go here!
-let Back_ground = [0] //[0]//[165, 230, 250]; 
+let Back_ground = [0]; 
 let pupil_colour = [255]; 
-let petal_colour =  [235, 84, 212]// [21, 125, 49]   //[252, 69, 3]; 
-let top_hat_colour = [255]//[219, 197, 151]
-let dot_colour = [0]
-let cheek_highlight = [235, 122, 233]
-let skull_face_colour = [245]
+let petal_colour =  [235, 84, 212]// [21, 125, 49]; 
+let top_hat_colour = [0];
+let dot_colour = [0];
+let cheek_highlight = [255];
+let skull_face_colour = [150, 5, 240];
 let removeHat = true //if false hat disappears
+let removeFlower = false //if false flowers disappear
 //[165, 230, 250]; blue 
 //[237, 134, 31] orange 
 //pastel red [240, 70, 70]
+//red [250, 42, 15] 
 //DEVELOP_GLYPH
 //GRID_WALLPAPER
 
 //NINE_PORTRAIT
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
     //true to show outline 
   //Grid settings
@@ -72,6 +74,7 @@ ellipse(113, 110, 8, 8); //right cheek highlight
 fill(dot_colour) //black
 ellipse(95, 87, 8, 8); //middle dot design 
 ellipse(105, 87, 4, 4); //right dot design
+ellipse(112, 87, 4, 4);// 2nd right dot design 
 ellipse(85, 87, 4, 4); //left dot design 
 ellipse(78, 87, 4, 4); //1st left dot design 
 
@@ -103,11 +106,13 @@ if (Back_ground[0] === 0) {
 }
 function draw_flower(x,y){
   
-  fill(petal_colour)//red petal
+  if (removeFlower){
+  fill(petal_colour)// petal colour prameter 
   stroke(0); //flower border colour  
   strokeWeight(1); //flower border 
   ellipse(x, y, 8, 19); //flower petal vertical  
   ellipse(x, y, 19, 8); //flower petal horizontal 
   fill(252, 186, 3) //yellow cntre  
   ellipse(x, y, 8, 8); //flower centre 
+  }
 }
