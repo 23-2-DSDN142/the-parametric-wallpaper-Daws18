@@ -1,21 +1,14 @@
 //your parameter variables go here!
 let Back_ground = [0]; 
 let pupil_colour = [255]; 
-let petal_colour =  [235, 84, 212]// [21, 125, 49]; 
+let petal_colour =  [235, 84, 212];
 let top_hat_colour = [0];
 let dot_colour = [0];
 let cheek_highlight = [255];
 let skull_face_colour = [150, 5, 240];
-let removeHat = true //if false hat disappears
-let removeFlower = false //if false flowers disappear
-//[165, 230, 250]; blue 
-//[237, 134, 31] orange 
-//pastel red [240, 70, 70]
-//red [250, 42, 15] 
-//DEVELOP_GLYPH
-//GRID_WALLPAPER
+let removeHat = true; //if false hat disappears
+let removeFlower = (false); //if false flowers disappear
 
-//NINE_PORTRAIT
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(A3);
@@ -33,18 +26,18 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
  
-  fill(0);
+  fill(0);//skull border colour
   ellipse(100, 100, 61, 46); //head border oval
   rect(80, 110, 31, 41);// head border rectangle 
-  noStroke();
+  noStroke();//rect border
   fill(skull_face_colour);
   ellipse(100, 100, 60, 45); //head oval 
 
 
 rect(80, 110, 30, 40);// head rectangle 
 stroke(12, 13, 12); //mouth  
-strokeWeight(2);
-fill(255)
+strokeWeight(2);//mouth 
+fill(255)//teeth colour
 rect(85, 125, 20, 20); //mouth lips border 
 
 fill(0);
@@ -102,11 +95,11 @@ draw_flower(117,87)//flower on right postion on skull
 if (Back_ground[0] === 0) {
   top_hat_colour = [255]; // Change top_hat_colour to white (255)
 } else {
-  top_hat_colour = [0];   // Revert to original color (black) if Back_ground is not 0
+  top_hat_colour = [0];   //Revert to original color (black) if Back_ground is not 0
 }
-function draw_flower(x,y){
+function draw_flower(x,y){ //lets me draw 
   
-  if (removeFlower){
+  if (removeFlower){//if statment that controls if flower is visable or not 
   fill(petal_colour)// petal colour prameter 
   stroke(0); //flower border colour  
   strokeWeight(1); //flower border 
