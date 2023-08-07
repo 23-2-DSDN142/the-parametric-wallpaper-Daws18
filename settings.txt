@@ -16,8 +16,8 @@ let top_hat_colour = [0];
 let dot_colour = [0];
 let cheek_highlight = [235, 122, 233];
 let skull_face_colour = [245];
-let removeHat = true //if false hat disappears
-let removeFlower = true //if false flowers disappear
+let removeHat = (true); //if false hat disappears
+let removeFlower = (true); //if false flowers disappear
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -42,8 +42,8 @@ let top_hat_colour = [0];
 let dot_colour = [0];
 let cheek_highlight =[235, 122, 233];
 let skull_face_colour = [245];
-let removeHat = true //if false hat disappears
-let removeFlower = false //if false flowers disappear
+let removeHat = (true); //if false hat disappears
+let removeFlower = (false); //if false flowers disappear
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -68,8 +68,8 @@ let top_hat_colour = [0];
 let dot_colour = [0];
 let cheek_highlight =[235, 122, 233];
 let skull_face_colour = [245];
-let removeHat = false //if false hat disappears
-let removeFlower = false //if false flowers disappear
+let removeHat = (false); //if false hat disappears
+let removeFlower = (false); //if false flowers disappear
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -94,8 +94,8 @@ let top_hat_colour = [0];
 let dot_colour = [0];
 let cheek_highlight =[235, 122, 233];
 let skull_face_colour = [245];
-let removeHat = true //if false hat disappears
-let removeFlower = true //if false flowers disappear
+let removeHat = (true); //if false hat disappears
+let removeFlower = (true); //if false flowers disappear
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -120,8 +120,8 @@ let top_hat_colour = [0];
 let dot_colour = [0];
 let cheek_highlight =[235, 122, 233];
 let skull_face_colour = [245];
-let removeHat = true //if false hat disappears
-let removeFlower = true //if false flowers disappear
+let removeHat = (true); //if false hat disappears
+let removeFlower = (true); //if false flowers disappear
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);

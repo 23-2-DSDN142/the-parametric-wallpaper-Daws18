@@ -6,7 +6,7 @@ let top_hat_colour = [0];
 let dot_colour = [0];
 let cheek_highlight = [255];
 let skull_face_colour = [150, 5, 240];
-let removeHat = true; //if false hat disappears
+let removeHat = (true); //if false hat disappears
 let removeFlower = (false); //if false flowers disappear
 
 function setup_wallpaper(pWallpaper) {
